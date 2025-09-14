@@ -1,0 +1,1410 @@
+{
+    "ID": "dc7c51fd-f8a5-4aa7-b460-1691b81159ae",
+    "Name": "jump",
+    "Author": "blackpink",
+    "ResFileUrl": "Audios/jump",
+    "BPM": 146,
+    "TotalDuration": 164,
+    "ScoreList": [
+        {
+            "beatTimes": 0,
+            "durationTime": 9.11,
+            "currectProcess": 99.6,
+            "lineLevels": 6,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 0.82,
+            "durationTime": 6.21,
+            "currectProcess": 93.95,
+            "lineLevels": 6,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 1.64,
+            "durationTime": 4.25,
+            "currectProcess": 76.74,
+            "lineLevels": 6,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 2.47,
+            "durationTime": 6.09,
+            "currectProcess": 97.25,
+            "lineLevels": 8,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 3.29,
+            "durationTime": 3.35,
+            "currectProcess": 65.22,
+            "lineLevels": 1,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 4.11,
+            "durationTime": 3.43,
+            "currectProcess": 73.56,
+            "lineLevels": 8,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 4.93,
+            "durationTime": 7.43,
+            "currectProcess": 66.88,
+            "lineLevels": 3,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 5.75,
+            "durationTime": 2.87,
+            "currectProcess": 2.88,
+            "lineLevels": 0,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 6.58,
+            "durationTime": 3.66,
+            "currectProcess": 62.78,
+            "lineLevels": 2,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 7.4,
+            "durationTime": 9.75,
+            "currectProcess": 58.8,
+            "lineLevels": 10,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 8.22,
+            "durationTime": 3.1,
+            "currectProcess": 24.72,
+            "lineLevels": 4,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 9.04,
+            "durationTime": 8.25,
+            "currectProcess": 51.99,
+            "lineLevels": 3,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 9.86,
+            "durationTime": 7.93,
+            "currectProcess": 25.53,
+            "lineLevels": 7,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 10.68,
+            "durationTime": 5.05,
+            "currectProcess": 4.36,
+            "lineLevels": 2,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 11.51,
+            "durationTime": 8.73,
+            "currectProcess": 61.72,
+            "lineLevels": 4,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 12.33,
+            "durationTime": 5.2,
+            "currectProcess": 37.67,
+            "lineLevels": 1,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 13.15,
+            "durationTime": 3.26,
+            "currectProcess": 24.25,
+            "lineLevels": 7,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 13.97,
+            "durationTime": 6.23,
+            "currectProcess": 88.82,
+            "lineLevels": 4,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 14.79,
+            "durationTime": 6.02,
+            "currectProcess": 74.32,
+            "lineLevels": 10,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 15.62,
+            "durationTime": 8.5,
+            "currectProcess": 0.25,
+            "lineLevels": 1,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 16.44,
+            "durationTime": 6.87,
+            "currectProcess": 16.69,
+            "lineLevels": 1,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 17.26,
+            "durationTime": 3.06,
+            "currectProcess": 27.83,
+            "lineLevels": 0,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 18.08,
+            "durationTime": 9.75,
+            "currectProcess": 50.14,
+            "lineLevels": 8,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 18.9,
+            "durationTime": 0.56,
+            "currectProcess": 28.04,
+            "lineLevels": 1,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 19.73,
+            "durationTime": 6.13,
+            "currectProcess": 61.79,
+            "lineLevels": 6,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 20.55,
+            "durationTime": 1.21,
+            "currectProcess": 85.01,
+            "lineLevels": 3,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 21.37,
+            "durationTime": 9.19,
+            "currectProcess": 29.4,
+            "lineLevels": 0,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 22.19,
+            "durationTime": 6.43,
+            "currectProcess": 73.16,
+            "lineLevels": 3,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 23.01,
+            "durationTime": 9.26,
+            "currectProcess": 61.72,
+            "lineLevels": 9,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 23.84,
+            "durationTime": 6.33,
+            "currectProcess": 53.4,
+            "lineLevels": 1,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 24.66,
+            "durationTime": 0.07,
+            "currectProcess": 44.98,
+            "lineLevels": 1,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 25.48,
+            "durationTime": 8.18,
+            "currectProcess": 11.15,
+            "lineLevels": 9,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 26.3,
+            "durationTime": 6.23,
+            "currectProcess": 55.79,
+            "lineLevels": 7,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 27.12,
+            "durationTime": 7.68,
+            "currectProcess": 65.99,
+            "lineLevels": 6,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 27.95,
+            "durationTime": 0.16,
+            "currectProcess": 96.97,
+            "lineLevels": 10,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 28.77,
+            "durationTime": 4.94,
+            "currectProcess": 62.55,
+            "lineLevels": 5,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 29.59,
+            "durationTime": 6.84,
+            "currectProcess": 82.86,
+            "lineLevels": 4,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 30.41,
+            "durationTime": 5.71,
+            "currectProcess": 71.62,
+            "lineLevels": 3,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 31.23,
+            "durationTime": 2.77,
+            "currectProcess": 15.73,
+            "lineLevels": 5,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 32.05,
+            "durationTime": 8.89,
+            "currectProcess": 8.65,
+            "lineLevels": 6,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 32.88,
+            "durationTime": 6.68,
+            "currectProcess": 44.99,
+            "lineLevels": 0,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 33.7,
+            "durationTime": 7.1,
+            "currectProcess": 77.83,
+            "lineLevels": 7,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 34.52,
+            "durationTime": 4.78,
+            "currectProcess": 16.76,
+            "lineLevels": 0,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 35.34,
+            "durationTime": 5.45,
+            "currectProcess": 66.46,
+            "lineLevels": 3,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 36.16,
+            "durationTime": 0.65,
+            "currectProcess": 83.12,
+            "lineLevels": 4,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 36.99,
+            "durationTime": 1.08,
+            "currectProcess": 63.43,
+            "lineLevels": 5,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 37.81,
+            "durationTime": 4.46,
+            "currectProcess": 70.88,
+            "lineLevels": 0,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 38.63,
+            "durationTime": 3.1,
+            "currectProcess": 86.53,
+            "lineLevels": 2,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 39.45,
+            "durationTime": 9.98,
+            "currectProcess": 26.81,
+            "lineLevels": 8,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 40.27,
+            "durationTime": 8.97,
+            "currectProcess": 47.62,
+            "lineLevels": 0,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 41.1,
+            "durationTime": 0.39,
+            "currectProcess": 8.75,
+            "lineLevels": 2,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 41.92,
+            "durationTime": 3.66,
+            "currectProcess": 46.73,
+            "lineLevels": 10,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 42.74,
+            "durationTime": 4.5,
+            "currectProcess": 70.73,
+            "lineLevels": 7,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 43.56,
+            "durationTime": 7.53,
+            "currectProcess": 55.94,
+            "lineLevels": 4,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 44.38,
+            "durationTime": 3.2,
+            "currectProcess": 40.85,
+            "lineLevels": 8,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 45.21,
+            "durationTime": 6.28,
+            "currectProcess": 14.92,
+            "lineLevels": 9,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 46.03,
+            "durationTime": 0.69,
+            "currectProcess": 70.97,
+            "lineLevels": 4,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 46.85,
+            "durationTime": 4.91,
+            "currectProcess": 16.36,
+            "lineLevels": 1,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 47.67,
+            "durationTime": 2.71,
+            "currectProcess": 25.23,
+            "lineLevels": 3,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 48.49,
+            "durationTime": 3.35,
+            "currectProcess": 18.33,
+            "lineLevels": 4,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 49.32,
+            "durationTime": 1.12,
+            "currectProcess": 86.13,
+            "lineLevels": 1,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 50.14,
+            "durationTime": 9.21,
+            "currectProcess": 35.55,
+            "lineLevels": 7,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 50.96,
+            "durationTime": 3.49,
+            "currectProcess": 50.36,
+            "lineLevels": 4,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 51.78,
+            "durationTime": 5.71,
+            "currectProcess": 92.78,
+            "lineLevels": 9,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 52.6,
+            "durationTime": 2.64,
+            "currectProcess": 74.98,
+            "lineLevels": 5,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 53.42,
+            "durationTime": 3.0,
+            "currectProcess": 26.06,
+            "lineLevels": 0,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 54.25,
+            "durationTime": 0.65,
+            "currectProcess": 36.0,
+            "lineLevels": 1,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 55.07,
+            "durationTime": 7.44,
+            "currectProcess": 91.99,
+            "lineLevels": 8,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 55.89,
+            "durationTime": 2.67,
+            "currectProcess": 65.83,
+            "lineLevels": 0,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 56.71,
+            "durationTime": 5.22,
+            "currectProcess": 64.22,
+            "lineLevels": 6,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 57.53,
+            "durationTime": 0.45,
+            "currectProcess": 62.57,
+            "lineLevels": 6,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 58.36,
+            "durationTime": 5.24,
+            "currectProcess": 31.93,
+            "lineLevels": 1,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 59.18,
+            "durationTime": 4.7,
+            "currectProcess": 0.68,
+            "lineLevels": 7,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 60.0,
+            "durationTime": 8.28,
+            "currectProcess": 43.81,
+            "lineLevels": 3,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 60.82,
+            "durationTime": 3.15,
+            "currectProcess": 64.5,
+            "lineLevels": 10,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 61.64,
+            "durationTime": 3.41,
+            "currectProcess": 98.61,
+            "lineLevels": 10,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 62.47,
+            "durationTime": 9.85,
+            "currectProcess": 24.77,
+            "lineLevels": 7,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 63.29,
+            "durationTime": 7.74,
+            "currectProcess": 15.18,
+            "lineLevels": 4,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 64.11,
+            "durationTime": 2.02,
+            "currectProcess": 33.09,
+            "lineLevels": 5,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 64.93,
+            "durationTime": 0.97,
+            "currectProcess": 93.92,
+            "lineLevels": 6,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 65.75,
+            "durationTime": 9.68,
+            "currectProcess": 45.14,
+            "lineLevels": 0,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 66.58,
+            "durationTime": 4.2,
+            "currectProcess": 32.56,
+            "lineLevels": 9,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 67.4,
+            "durationTime": 0.77,
+            "currectProcess": 52.57,
+            "lineLevels": 7,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 68.22,
+            "durationTime": 2.82,
+            "currectProcess": 81.77,
+            "lineLevels": 5,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 69.04,
+            "durationTime": 2.68,
+            "currectProcess": 27.85,
+            "lineLevels": 9,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 69.86,
+            "durationTime": 4.37,
+            "currectProcess": 18.12,
+            "lineLevels": 1,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 70.68,
+            "durationTime": 6.26,
+            "currectProcess": 22.46,
+            "lineLevels": 3,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 71.51,
+            "durationTime": 6.21,
+            "currectProcess": 58.23,
+            "lineLevels": 4,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 72.33,
+            "durationTime": 9.69,
+            "currectProcess": 85.93,
+            "lineLevels": 6,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 73.15,
+            "durationTime": 4.72,
+            "currectProcess": 15.55,
+            "lineLevels": 3,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 73.97,
+            "durationTime": 9.42,
+            "currectProcess": 71.22,
+            "lineLevels": 0,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 74.79,
+            "durationTime": 5.59,
+            "currectProcess": 61.61,
+            "lineLevels": 5,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 75.62,
+            "durationTime": 3.0,
+            "currectProcess": 73.56,
+            "lineLevels": 9,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 76.44,
+            "durationTime": 2.88,
+            "currectProcess": 75.65,
+            "lineLevels": 10,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 77.26,
+            "durationTime": 8.47,
+            "currectProcess": 34.33,
+            "lineLevels": 0,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 78.08,
+            "durationTime": 6.3,
+            "currectProcess": 64.61,
+            "lineLevels": 3,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 78.9,
+            "durationTime": 5.15,
+            "currectProcess": 55.81,
+            "lineLevels": 4,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 79.73,
+            "durationTime": 1.1,
+            "currectProcess": 87.96,
+            "lineLevels": 8,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 80.55,
+            "durationTime": 2.07,
+            "currectProcess": 5.91,
+            "lineLevels": 1,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 81.37,
+            "durationTime": 5.04,
+            "currectProcess": 27.76,
+            "lineLevels": 9,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 82.19,
+            "durationTime": 9.32,
+            "currectProcess": 52.61,
+            "lineLevels": 2,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 83.01,
+            "durationTime": 3.51,
+            "currectProcess": 4.36,
+            "lineLevels": 1,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 83.84,
+            "durationTime": 1.79,
+            "currectProcess": 15.54,
+            "lineLevels": 3,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 84.66,
+            "durationTime": 8.35,
+            "currectProcess": 90.74,
+            "lineLevels": 0,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 85.48,
+            "durationTime": 3.44,
+            "currectProcess": 76.94,
+            "lineLevels": 8,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 86.3,
+            "durationTime": 6.97,
+            "currectProcess": 48.98,
+            "lineLevels": 0,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 87.12,
+            "durationTime": 9.33,
+            "currectProcess": 81.83,
+            "lineLevels": 6,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 87.95,
+            "durationTime": 4.83,
+            "currectProcess": 17.64,
+            "lineLevels": 5,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 88.77,
+            "durationTime": 5.89,
+            "currectProcess": 94.75,
+            "lineLevels": 0,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 89.59,
+            "durationTime": 3.7,
+            "currectProcess": 87.59,
+            "lineLevels": 1,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 90.41,
+            "durationTime": 5.97,
+            "currectProcess": 41.7,
+            "lineLevels": 9,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 91.23,
+            "durationTime": 3.2,
+            "currectProcess": 8.64,
+            "lineLevels": 10,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 92.05,
+            "durationTime": 7.76,
+            "currectProcess": 36.95,
+            "lineLevels": 7,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 92.88,
+            "durationTime": 2.66,
+            "currectProcess": 90.19,
+            "lineLevels": 4,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 93.7,
+            "durationTime": 8.42,
+            "currectProcess": 40.84,
+            "lineLevels": 8,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 94.52,
+            "durationTime": 8.71,
+            "currectProcess": 31.62,
+            "lineLevels": 9,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 95.34,
+            "durationTime": 6.9,
+            "currectProcess": 97.56,
+            "lineLevels": 10,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 96.16,
+            "durationTime": 2.78,
+            "currectProcess": 95.64,
+            "lineLevels": 1,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 96.99,
+            "durationTime": 3.22,
+            "currectProcess": 64.31,
+            "lineLevels": 2,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 97.81,
+            "durationTime": 4.87,
+            "currectProcess": 88.06,
+            "lineLevels": 3,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 98.63,
+            "durationTime": 4.33,
+            "currectProcess": 54.33,
+            "lineLevels": 4,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 99.45,
+            "durationTime": 8.95,
+            "currectProcess": 62.5,
+            "lineLevels": 3,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 100.27,
+            "durationTime": 1.71,
+            "currectProcess": 5.89,
+            "lineLevels": 10,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 101.1,
+            "durationTime": 6.79,
+            "currectProcess": 9.05,
+            "lineLevels": 1,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 101.92,
+            "durationTime": 6.36,
+            "currectProcess": 28.34,
+            "lineLevels": 8,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 102.74,
+            "durationTime": 8.24,
+            "currectProcess": 5.03,
+            "lineLevels": 6,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 103.56,
+            "durationTime": 6.25,
+            "currectProcess": 95.85,
+            "lineLevels": 6,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 104.38,
+            "durationTime": 9.49,
+            "currectProcess": 67.42,
+            "lineLevels": 10,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 105.21,
+            "durationTime": 7.56,
+            "currectProcess": 18.72,
+            "lineLevels": 9,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 106.03,
+            "durationTime": 3.07,
+            "currectProcess": 69.52,
+            "lineLevels": 8,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 106.85,
+            "durationTime": 9.09,
+            "currectProcess": 36.1,
+            "lineLevels": 6,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 107.67,
+            "durationTime": 7.86,
+            "currectProcess": 23.79,
+            "lineLevels": 3,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 108.49,
+            "durationTime": 2.19,
+            "currectProcess": 18.59,
+            "lineLevels": 5,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 109.32,
+            "durationTime": 2.52,
+            "currectProcess": 70.74,
+            "lineLevels": 10,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 110.14,
+            "durationTime": 3.78,
+            "currectProcess": 45.23,
+            "lineLevels": 6,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 110.96,
+            "durationTime": 2.28,
+            "currectProcess": 44.17,
+            "lineLevels": 4,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 111.78,
+            "durationTime": 4.87,
+            "currectProcess": 68.99,
+            "lineLevels": 7,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 112.6,
+            "durationTime": 8.74,
+            "currectProcess": 81.09,
+            "lineLevels": 9,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 113.42,
+            "durationTime": 7.44,
+            "currectProcess": 38.71,
+            "lineLevels": 9,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 114.25,
+            "durationTime": 7.35,
+            "currectProcess": 17.57,
+            "lineLevels": 7,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 115.07,
+            "durationTime": 6.55,
+            "currectProcess": 9.02,
+            "lineLevels": 1,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 115.89,
+            "durationTime": 3.2,
+            "currectProcess": 14.47,
+            "lineLevels": 6,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 116.71,
+            "durationTime": 9.24,
+            "currectProcess": 57.73,
+            "lineLevels": 7,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 117.53,
+            "durationTime": 8.94,
+            "currectProcess": 98.47,
+            "lineLevels": 5,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 118.36,
+            "durationTime": 1.67,
+            "currectProcess": 65.74,
+            "lineLevels": 2,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 119.18,
+            "durationTime": 6.6,
+            "currectProcess": 78.05,
+            "lineLevels": 5,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 120.0,
+            "durationTime": 6.14,
+            "currectProcess": 59.04,
+            "lineLevels": 3,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 120.82,
+            "durationTime": 0.55,
+            "currectProcess": 10.5,
+            "lineLevels": 2,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 121.64,
+            "durationTime": 8.86,
+            "currectProcess": 54.15,
+            "lineLevels": 2,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 122.47,
+            "durationTime": 2.17,
+            "currectProcess": 95.32,
+            "lineLevels": 9,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 123.29,
+            "durationTime": 6.3,
+            "currectProcess": 59.04,
+            "lineLevels": 5,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 124.11,
+            "durationTime": 4.67,
+            "currectProcess": 87.41,
+            "lineLevels": 5,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 124.93,
+            "durationTime": 0.35,
+            "currectProcess": 2.57,
+            "lineLevels": 8,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 125.75,
+            "durationTime": 1.98,
+            "currectProcess": 90.71,
+            "lineLevels": 4,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 126.58,
+            "durationTime": 3.93,
+            "currectProcess": 1.11,
+            "lineLevels": 0,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 127.4,
+            "durationTime": 8.55,
+            "currectProcess": 70.42,
+            "lineLevels": 4,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 128.22,
+            "durationTime": 2.57,
+            "currectProcess": 60.02,
+            "lineLevels": 10,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 129.04,
+            "durationTime": 2.61,
+            "currectProcess": 74.61,
+            "lineLevels": 8,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 129.86,
+            "durationTime": 9.6,
+            "currectProcess": 64.95,
+            "lineLevels": 4,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 130.68,
+            "durationTime": 1.04,
+            "currectProcess": 25.69,
+            "lineLevels": 5,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 131.51,
+            "durationTime": 9.29,
+            "currectProcess": 42.01,
+            "lineLevels": 0,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 132.33,
+            "durationTime": 7.06,
+            "currectProcess": 72.08,
+            "lineLevels": 8,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 133.15,
+            "durationTime": 0.07,
+            "currectProcess": 58.01,
+            "lineLevels": 10,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 133.97,
+            "durationTime": 3.25,
+            "currectProcess": 58.91,
+            "lineLevels": 1,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 134.79,
+            "durationTime": 0.55,
+            "currectProcess": 36.3,
+            "lineLevels": 8,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 135.62,
+            "durationTime": 1.3,
+            "currectProcess": 58.32,
+            "lineLevels": 0,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 136.44,
+            "durationTime": 3.96,
+            "currectProcess": 29.95,
+            "lineLevels": 9,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 137.26,
+            "durationTime": 7.86,
+            "currectProcess": 29.0,
+            "lineLevels": 5,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 138.08,
+            "durationTime": 5.9,
+            "currectProcess": 87.63,
+            "lineLevels": 4,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 138.9,
+            "durationTime": 6.22,
+            "currectProcess": 49.68,
+            "lineLevels": 9,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 139.73,
+            "durationTime": 8.4,
+            "currectProcess": 70.92,
+            "lineLevels": 1,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 140.55,
+            "durationTime": 4.58,
+            "currectProcess": 83.88,
+            "lineLevels": 0,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 141.37,
+            "durationTime": 6.24,
+            "currectProcess": 5.24,
+            "lineLevels": 10,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 142.19,
+            "durationTime": 2.87,
+            "currectProcess": 74.35,
+            "lineLevels": 6,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 143.01,
+            "durationTime": 4.02,
+            "currectProcess": 97.38,
+            "lineLevels": 6,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 143.84,
+            "durationTime": 2.86,
+            "currectProcess": 34.13,
+            "lineLevels": 4,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 144.66,
+            "durationTime": 0.01,
+            "currectProcess": 38.92,
+            "lineLevels": 5,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 145.48,
+            "durationTime": 4.06,
+            "currectProcess": 57.49,
+            "lineLevels": 3,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 146.3,
+            "durationTime": 6.88,
+            "currectProcess": 24.65,
+            "lineLevels": 3,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 147.12,
+            "durationTime": 2.32,
+            "currectProcess": 33.47,
+            "lineLevels": 10,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 147.95,
+            "durationTime": 6.11,
+            "currectProcess": 63.25,
+            "lineLevels": 6,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 148.77,
+            "durationTime": 2.31,
+            "currectProcess": 73.69,
+            "lineLevels": 6,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 149.59,
+            "durationTime": 4.33,
+            "currectProcess": 73.32,
+            "lineLevels": 10,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 150.41,
+            "durationTime": 6.39,
+            "currectProcess": 0.67,
+            "lineLevels": 9,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 151.23,
+            "durationTime": 2.59,
+            "currectProcess": 2.94,
+            "lineLevels": 10,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 152.05,
+            "durationTime": 2.59,
+            "currectProcess": 86.12,
+            "lineLevels": 9,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 152.88,
+            "durationTime": 9.24,
+            "currectProcess": 95.66,
+            "lineLevels": 2,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 153.7,
+            "durationTime": 5.68,
+            "currectProcess": 25.62,
+            "lineLevels": 2,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 154.52,
+            "durationTime": 2.23,
+            "currectProcess": 59.46,
+            "lineLevels": 9,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 155.34,
+            "durationTime": 7.77,
+            "currectProcess": 55.64,
+            "lineLevels": 8,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 156.16,
+            "durationTime": 6.97,
+            "currectProcess": 14.84,
+            "lineLevels": 9,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 156.99,
+            "durationTime": 4.85,
+            "currectProcess": 15.43,
+            "lineLevels": 4,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 157.81,
+            "durationTime": 4.33,
+            "currectProcess": 83.72,
+            "lineLevels": 9,
+            "flyLevel": "2"
+        },
+        {
+            "beatTimes": 158.63,
+            "durationTime": 7.07,
+            "currectProcess": 33.89,
+            "lineLevels": 7,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 159.45,
+            "durationTime": 6.31,
+            "currectProcess": 83.84,
+            "lineLevels": 3,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 160.27,
+            "durationTime": 4.87,
+            "currectProcess": 1.16,
+            "lineLevels": 6,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 161.1,
+            "durationTime": 4.59,
+            "currectProcess": 1.06,
+            "lineLevels": 0,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 161.92,
+            "durationTime": 6.08,
+            "currectProcess": 57.68,
+            "lineLevels": 0,
+            "flyLevel": "3"
+        },
+        {
+            "beatTimes": 162.74,
+            "durationTime": 4.52,
+            "currectProcess": 78.99,
+            "lineLevels": 8,
+            "flyLevel": "1"
+        },
+        {
+            "beatTimes": 163.56,
+            "durationTime": 3.63,
+            "currectProcess": 12.52,
+            "lineLevels": 9,
+            "flyLevel": "1"
+        }
+    ]
+}
