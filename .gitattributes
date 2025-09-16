@@ -1,18 +1,95 @@
-*.tga filter=lfs diff=lfs merge=lfs -text
-*.ogg filter=lfs diff=lfs merge=lfs -text
-*.png filter=lfs diff=lfs merge=lfs -text
-*.bmp filter=lfs diff=lfs merge=lfs -text
-*.tiff filter=lfs diff=lfs merge=lfs -text
-*.ico filter=lfs diff=lfs merge=lfs -text
-*.fbx filter=lfs diff=lfs merge=lfs -text
-*.wav filter=lfs diff=lfs merge=lfs -text
-*.aif filter=lfs diff=lfs merge=lfs -text
-*.flac filter=lfs diff=lfs merge=lfs -text
-*.mov filter=lfs diff=lfs merge=lfs -text
-*.mp4 filter=lfs diff=lfs merge=lfs -text
-*.avi filter=lfs diff=lfs merge=lfs -text
-*.jpg filter=lfs diff=lfs merge=lfs -text
-*.obj filter=lfs diff=lfs merge=lfs -text
-*.mp3 filter=lfs diff=lfs merge=lfs -text
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# --- 核心Unity文件 (必须用LFS管理) ---
+# 这些是项目中最常见、最容易冲突的大文件，必须用LFS。
+
+# 1. 资源文件
 *.psd filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.tga filter=lfs diff=lfs merge=lfs -text
+*.tif filter=lfs diff=lfs merge=lfs -text
+*.tiff filter=lfs diff=lfs merge=lfs -text
+*.exr filter=lfs diff=lfs merge=lfs -text
 *.gif filter=lfs diff=lfs merge=lfs -text
+*.bmp filter=lfs diff=lfs merge=lfs -text
+*.ico filter=lfs diff=lfs merge=lfs -text
+*.hdr filter=lfs diff=lfs merge=lfs -text
+*.ies filter=lfs diff=lfs merge=lfs -text
+
+# 2. 3D模型文件
+*.fbx filter=lfs diff=lfs merge=lfs -text
+*.obj filter=lfs diff=lfs merge=lfs -text
+*.blend filter=lfs diff=lfs merge=lfs -text
+*.max filter=lfs diff=lfs merge=lfs -text
+*.mb filter=lfs diff=lfs merge=lfs -text
+*.ma filter=lfs diff=lfs merge=lfs -text
+*.3ds filter=lfs diff=lfs merge=lfs -text
+*.dae filter=lfs diff=lfs merge=lfs -text
+
+# 3. 音频文件
+*.wav filter=lfs diff=lfs merge=lfs -text
+*.mp3 filter=lfs diff=lfs merge=lfs -text
+*.ogg filter=lfs diff=lfs merge=lfs -text
+*.aif filter=lfs diff=lfs merge=lfs -text
+*.aiff filter=lfs diff=lfs merge=lfs -text
+*.flac filter=lfs diff=lfs merge=lfs -text
+
+# 4. 视频文件
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.mov filter=lfs diff=lfs merge=lfs -text
+*.avi filter=lfs diff=lfs merge=lfs -text
+*.webm filter=lfs diff=lfs merge=lfs -text
+
+# 5. 字体文件
+*.ttf filter=lfs diff=lfs merge=lfs -text
+*.otf filter=lfs diff=lfs merge=lfs -text
+
+# 6. 其他Unity资产
+*.asset filter=lfs diff=lfs merge=lfs -text
+*.prefab filter=lfs diff=lfs merge=lfs -text
+*.unity filter=lfs diff=lfs merge=lfs -text
+*.mat filter=lfs diff=lfs merge=lfs -text
+*.controller filter=lfs diff=lfs merge=lfs -text
+*.anim filter=lfs diff=lfs merge=lfs -text
+*.physicmaterial filter=lfs diff=lfs merge=lfs -text
+*.physicsmaterial2d filter=lfs diff=lfs merge=lfs -text
+*.cubemap filter=lfs diff=lfs merge=lfs -text
+*.flare filter=lfs diff=lfs merge=lfs -text
+*.rendertexture filter=lfs diff=lfs merge=lfs -text
+
+# 7. 预制件和场景 (虽然是YAML文本，但合并极其困难，建议加锁)
+*.prefab merge=unityyamlmerge eol=lf
+*.unity merge=unityyamlmerge eol=lf
+*.asset merge=unityyamlmerge eol=lf
+*.anim merge=unityyamlmerge eol=lf
+*.controller merge=unityyamlmerge eol=lf
+*.mat merge=unityyamlmerge eol=lf
+
+# --- 不应跟踪的文件 (由.gitignore处理) ---
+# 这些通常在.gitignore中，但为确保万一，也可以明确一下
+[Bb]uild/ export
+[Tt]emp/ export-ignore
+[Ll]ibrary/ export-ignore
+[Ll]ogs/ export-ignore
+[Oo]bj/ export-ignore
+[Uu]ser[Ss]ettings/ export-ignore
+*.csproj export-ignore
+*.sln export-ignore
+
+# --- 始终用Git管理的文本文件 ---
+# 这些是项目核心的配置文件，必须用Git直接管理
+*.md text diff
+*.txt text diff
+.gitattributes text diff
+.gitignore text diff
+Packages/manifest.json text diff
+Packages/packages-lock.json text diff
+ProjectSettings/*.asset text diff
+ProjectSettings/*.txt text diff
+
+# --- 特殊处理 ---
+# 对于确实是纯文本的自定义文件，可以强制视为文本
+# SomeFile.extension text
