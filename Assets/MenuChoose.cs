@@ -7,15 +7,22 @@ using DG.Tweening;
 using System;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using UnityEngine.Rendering.Universal;
+using UnityEditor.SceneManagement;
 public class MenuChoose : MonoBehaviour
 {
     public GameProcessManager instance;
     public Button ChooseMusicButton;
     public Button AgainOpeningButton;
     public Button SpecialButton;
+    public Button BackButton;
     public GameObject DescriptionTextMesh;
     private TextMeshProUGUI _description;
     UnityEngine.AsyncOperation operation;
+
+    private Transform _musicListPanel;//音乐列表页面
+    private Transform _menuPanel;//菜单页面
+    private Vector3? TemporaryStoragePosition = null;
     public enum MenuType
     {
         [Description("选择音乐")]
@@ -25,17 +32,19 @@ public class MenuChoose : MonoBehaviour
         [Description("特殊隐藏场")]
         Special,
     }
-
+    private void Awake()
+    {
+        _menuPanel = transform.Find("MenuPanle");
+    }
     // Start is called before the first frame update
     void Start()
     {
-        //transform = GetComponent<Transform>();
         _description = DescriptionTextMesh.GetComponent<TextMeshProUGUI>();
         SetupButtonDescription(ChooseMusicButton, "选择你喜欢的音乐加入游玩");
         SetupButtonDescription(AgainOpeningButton, "重新游玩开场（随机开场）");
         SetupButtonDescription(SpecialButton, "解锁隐藏特殊场");
-        //ChooseMusicButton.onClick.AddListener(OnChooseMusic);
         SetupButtonListenEvent(ChooseMusicButton, OnChooseMusic);
+        SetupButtonListenEvent(BackButton, OnMusicListBackMenu);
     }
 
     // Update is called once per frame
@@ -55,17 +64,28 @@ public class MenuChoose : MonoBehaviour
     /// </summary>
     void OnChooseMusic()
     {
+        _musicListPanel = transform.Find("MusicListPanel");
         //panel左移动
-        var _musicListPanel = GameObject.Find("MusicListPanel");
-        if (_musicListPanel == null)
-        {
+        if (_musicListPanel == null && _menuPanel == null)
             Debug.Log("this null");
-        }
+        else
         //target 位置
-        var _menuPanel = GameObject.Find("MenuPanle");
-        panleMove(_musicListPanel, _menuPanel);
+        {
+            TemporaryStoragePosition = _musicListPanel.transform.position;
+            PanelMove(_musicListPanel, _menuPanel.position);
+        }
     }
-    
+    void OnMusicListBackMenu()
+    {
+        _musicListPanel = transform.Find("MusicListPanel");
+        if (_musicListPanel == null && _menuPanel == null)
+            Debug.Log("this null");
+        else
+        {
+            PanelMove(_musicListPanel, TemporaryStoragePosition.GetValueOrDefault());
+            TemporaryStoragePosition = null;
+        }
+    }
     /// <summary>
     /// 设置鼠标悬停在按钮上显示描述文本
     /// </summary>
@@ -89,9 +109,10 @@ public class MenuChoose : MonoBehaviour
         eventExit.callback.AddListener((data) => { _description.text = ""; });
         trigger.triggers.Add(eventExit);
     }
-    void panleMove(GameObject origin, GameObject target)
+    void PanelMove(Transform origin, Vector3 target)
     {
-        origin.transform.DOMove(target.transform.position, 1);
+        //Debug.Log($"{origin.position}至{target.position}");
+        origin.DOMove(target, 1);
     }
     private IEnumerator OnLoadScence(int _index)
     {
