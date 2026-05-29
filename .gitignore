@@ -1,18 +1,35 @@
-.vs/
-.vscode/
-*.sln
+# Unity
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/MemoryCaptures/
+
+# Visual Studio
 *.csproj
+*.unityproj
+*.sln
+*.suo
 *.user
 *.userprefs
-。DS_Store
-.idel/
-omnisharp.json
-obj/
-usersettings/
-Temp/
-ProjectSettings/
-.vsconfig
-Packages/
-Logs/
-Library/
-.idea/
+*.pidb
+*.booproj
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 密钥、配置
+*.key
+*.pem
+/Assets/StreamingAssets/*
+/Assets/Resources/*Secret*
+/Assets/AssetStoreTools/*
+
+#打包文件
+*.apk
+*.unitypackage
+
