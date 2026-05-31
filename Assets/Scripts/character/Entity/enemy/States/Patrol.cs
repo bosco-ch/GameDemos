@@ -7,8 +7,8 @@ namespace character.Entity.enemy.States
     public class Patrol : IEnemyState
     {
         private readonly EnemySmart2dAI _enemy;
-        private Vector2 _RayCastDirection; //射线检测方向
-        public UnityEvent PatrolEvent = new UnityEvent();
+        private Vector2 _rayCastDirection; //射线检测方向
+        public readonly UnityEvent PatrolEvent = new UnityEvent();
         private int _isChangeDirection = 1; //这个是用来定那个往那个巡逻点点移动的
         private Vector3 _nextPoint;
 
@@ -20,7 +20,8 @@ namespace character.Entity.enemy.States
         public void OnEnter()
         {
             _nextPoint = _enemy.PatrolPoints[1];
-            _RayCastDirection = (_nextPoint - _enemy.transform.position).normalized;
+            _rayCastDirection = (_nextPoint - _enemy.transform.position).normalized;
+            _enemy.agent.speed = _enemy.PatrolSpeed;
             PatrolEvent?.Invoke();
         }
 
@@ -36,9 +37,8 @@ namespace character.Entity.enemy.States
             {
                 _isChangeDirection++;
                 _nextPoint = _enemy.PatrolPoints[_isChangeDirection % 2];
-                _RayCastDirection = -_RayCastDirection;
+                _rayCastDirection = -_rayCastDirection;
             }
-
             HandleRayCastPlayer(); //检测玩家
         }
 
@@ -46,8 +46,8 @@ namespace character.Entity.enemy.States
         void HandleRayCast()
         {
             //射线检测是一直在进行的，需要每帧都处理
-            var hit = Detector.RayCast((Vector2)_enemy.transform.position + _RayCastDirection * 0.25f,
-                _RayCastDirection,
+            var hit = Detector.RayCast((Vector2)_enemy.transform.position + _rayCastDirection * 0.25f,
+                _rayCastDirection,
                 _enemy.ForwardDis,
                 GameLayer.WallOrEnemy);
             if (!hit) return;

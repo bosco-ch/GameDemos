@@ -4,8 +4,7 @@ namespace Editors
 {
     public class DialogueData : ScriptableObject
     {
-        private string speakerName;
-        private Sprite sprite;
-        
+        private string _speakerName;
+        private Sprite _sprite;
     }
 }
