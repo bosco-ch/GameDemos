@@ -18,7 +18,7 @@ namespace Factories
                 datas.Add(d);
             }
         }
-
+        
         public bool IsCompleted()
         {
             bool iscomplete = true;

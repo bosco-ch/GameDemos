@@ -16,23 +16,21 @@ namespace character.Entity.player
     {
         [Header("LineRenderer Components")] private LineRenderer _lineRenderer;
         private Vector3 _linRenderEnd; //辅助瞄准线结束位置
-
-        [Header("Attack Settings")] [SerializeField]
+        [Header("Attack Settings")]
+        [SerializeField]
         private List<WeaponConfigSo> weaponSoList;
-
         private WeaponBase _weaponBase;
         public WeaponBase WeaponBase => _weaponBase;
         private float AttackRange => _weaponBase.Data.attackRange; //攻击范围
         public float AttackWindUp => _weaponBase.Data.windUpTime; //前摇
         public float AttackTime => _weaponBase.Data.attackTime; //攻击中
         public float RecoverTime => _weaponBase.Data.recoverTime; //后摇
-
         public int WeaponIndex
         {
             get => _weaponIndex;
             set => _weaponIndex = value;
         }
-
+    
         private int _weaponIndex = 1;
         private readonly List<WeaponBase> _weaponTypes = new List<WeaponBase>();
 
@@ -53,7 +51,6 @@ namespace character.Entity.player
                 _attackMachine[value].onEnter();
             }
         }
-
         [Header("Rotation")] private Vector3 _mousePos;
         private float _angleOffset;
         private Camera _camera;
@@ -159,7 +156,6 @@ namespace character.Entity.player
             {
                 _linRenderEnd = hit.point;
             }
-
             _linRenderEnd.z = -.1f;
             _lineRenderer.SetPosition(0, transform.position);
             _lineRenderer.SetPosition(1, _linRenderEnd);

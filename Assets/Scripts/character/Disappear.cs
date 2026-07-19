@@ -1,32 +1,35 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using DG.Tweening;
-public class Disappear : MonoBehaviour
+using UnityEngine;
+
+namespace character
 {
-    // public Transform target;
-    public Transform transform;
-    public ParticleSystem particleSystem;
-
-    Material material;
-    // Start is called before the first frame update
-    void Start()
+    public class Disappear : MonoBehaviour
     {
-        material = GetComponent<Renderer>().material;
-        // particleSystem = GetComponent<ParticleSystem>();
-    }
+        // public Transform target;
+        public new ParticleSystem particleSystem;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.S))
+        private Material _material;
+
+        // Start is called before the first frame update
+        void Start()
         {
-            Die();
+            _material = GetComponent<Renderer>().material;
+            // particleSystem = GetComponent<ParticleSystem>();
         }
-    }
-    private void Die()
-    {
-        particleSystem.Play();
-        material.DOFloat(-1, "_Strength", 1.5f);
+
+        // Update is called once per frame
+        void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                Die();
+            }
+        }
+
+        private void Die()
+        {
+            particleSystem.Play();
+            _material.DOFloat(-1, "_Strength", 1.5f);
+        }
     }
 }

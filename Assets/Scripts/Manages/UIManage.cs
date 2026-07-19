@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 using UnityEngine.UI;
 
 namespace Manages
@@ -20,20 +21,26 @@ namespace Manages
                 transform.SetParent(GameRoot.Instance.transform);
             }
         }
-        private const string PanelPrefabPath = "Prefab/Panel/";//面板的预制件位置
+
+        private const string PanelPrefabPath = "Prefab/Panel/"; //面板的预制件位置
+
         private static Dictionary<UIPanelType, string> _dictPrefabPath = new()
         {
-            {UIPanelType.LotteryPanel,"Lottery/LotteryPanel"  },
-            {UIPanelType.MainMenuPanel,"MainPanel"  },
-            {UIPanelType.PackagePanel,"Package/PackagePanel"  },
-            {UIPanelType.SettingPanel,""  },
+            { UIPanelType.LotteryPanel, "Lottery/LotteryPanel" },
+            { UIPanelType.MainMenuPanel, "MainPanel" },
+            { UIPanelType.PackagePanel, "Package/PackagePanel" },
+            { UIPanelType.SettingPanel, "" },
         };
+
         //加一个线程安全锁
         private Stack<BasePanel> _basePanelsStack = new();
+
         //预制件缓存
         private Dictionary<UIPanelType, BasePanel> _panelDict = new();
+
         //音效缓存
         private Dictionary<Button, AudioClip> _audioClipDict = new();
+
         public T ShowPanel<T>(UIPanelType panelType) where T : BasePanel
         {
             T currectPanel = null;
@@ -46,6 +53,7 @@ namespace Manages
                 _basePanelsStack.Push(outPanel);
                 return outPanel as T;
             }
+
             //缓存中没有，则使用预制体
             GameObject _prefab = Resources.Load<GameObject>(PanelPrefabPath + _dictPrefabPath[panelType]);
             if (_prefab == null)
@@ -53,14 +61,16 @@ namespace Manages
                 Debug.LogError($"path of {PanelPrefabPath + _dictPrefabPath[panelType]} is not exit");
                 return null;
             }
-            GameObject panel = Instantiate(_prefab);//实例化
+
+            GameObject panel = Instantiate(_prefab); //实例化
             currectPanel = panel.GetComponent<T>();
             if (currectPanel == null)
             {
                 Debug.LogError($"Script {panelType.ToString()} is not mounted on the {currectPanel}");
-                Destroy(panel);//避免资源浪费
+                Destroy(panel); //避免资源浪费
                 return null;
             }
+
             currectPanel.init();
             _panelDict.Add(panelType, currectPanel);
             if (_basePanelsStack.Count > 0)
@@ -68,18 +78,55 @@ namespace Manages
                 var topPanel = _basePanelsStack.Peek();
                 topPanel.gameObject.SetActive(false);
             }
+
             currectPanel.gameObject.SetActive(true);
             _basePanelsStack.Push(currectPanel);
             //给面板里面所有按钮添加上音效
             foreach (var obj in currectPanel.GetComponentsInChildren<UnityEngine.UI.Button>(true))
             {
-                obj.onClick.AddListener(() =>
-                {
-                    AudioManage.Instance.PlayOneShot();
-                });
+                obj.onClick.AddListener(() => { AudioManage.Instance.PlayOneShot(); });
             }
+
             return currectPanel;
         }
+
+        public T ShowPanel<T>(UIPanelType panelType, string address) where T : BasePanel
+        {
+            T currectPanel = null;
+            //检查一下缓存，若是缓存已经存在，则之间显示
+            if (_panelDict.TryGetValue(panelType, out BasePanel outPanel))
+            {
+                //outPanel.OpenPanel();
+                currectPanel = outPanel as T;
+                outPanel.gameObject.SetActive(true);
+                _basePanelsStack.Push(outPanel);
+                return outPanel as T;
+            }
+            //缓存中没有，则使用预制体
+            Addressables.LoadAssetAsync<GameObject>(address).Completed += handle =>
+            {
+                GameObject prefab;
+                prefab = handle.Result;
+                GameObject panel = Instantiate(prefab); //实例化
+                currectPanel = panel.GetComponent<T>();
+                currectPanel.init();
+                _panelDict.Add(panelType, currectPanel);
+                if (_basePanelsStack.Count > 0)
+                {
+                    var topPanel = _basePanelsStack.Peek();
+                    topPanel.gameObject.SetActive(false);
+                }
+                currectPanel.gameObject.SetActive(true);
+                _basePanelsStack.Push(currectPanel);
+                //给面板里面所有按钮添加上音效
+                foreach (var obj in currectPanel.GetComponentsInChildren<UnityEngine.UI.Button>(true))
+                {
+                    obj.onClick.AddListener(() => { AudioManage.Instance.PlayOneShot(); });
+                }
+            };
+            return currectPanel;
+        }
+
         public void HidePanel()
         {
             // _panelDict.TryGetValue(panelType, out BasePanel outPanel);
@@ -101,8 +148,8 @@ namespace Manages
             {
                 topPanel.gameObject.SetActive(true);
             }
-
         }
+
         /// <summary>
         /// 移除panel
         /// </summary>
@@ -118,8 +165,8 @@ namespace Manages
             {
                 Debug.LogWarning($"{outPanel} is not load,dont need destory");
             }
-
         }
+
         /// <summary>
         /// 销毁所有panel
         /// </summary>
@@ -130,6 +177,7 @@ namespace Manages
                 Destroy(panel.Value.gameObject);
             }
         }
+
         /// <summary>
         /// 隐藏所有面板
         /// </summary>
@@ -141,14 +189,16 @@ namespace Manages
                 _key.gameObject.SetActive(false);
             }
         }
+
         public void RemoveAll()
         {
             _panelDict.Clear();
         }
+
         public void OnTestFinish()
         {
-
         }
+
         void OnApplicationQuit()
         {
             Destroy(gameObject);

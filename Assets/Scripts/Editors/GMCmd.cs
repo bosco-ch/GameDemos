@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Manages;
 using Saves;
+using UI;
 using UnityEditor;
 using UnityEngine;
 
@@ -70,22 +71,23 @@ namespace Editors
             UIManage.Instance.RemoveAll();
         }
 
-
         [MenuItem("2d Vision/Save date")]
         public static void VisionGameSaveDate()
         {
             SaveManager.Instance.SaveGame();
         }
+
         [MenuItem("2d Vision/Load date")]
         public static void VisionGameLoadDate()
         {
             SaveManager.Instance.LoadData();
         }
-        // [MenuItem("C#/1.Static Property Test")]
-        // public static void StaticPropertyTest()
-        // {
-        //     Debug.Log(PackageLocalTable.num);
-        //     Debug.Log(PackageLocalTable.time);
-        // }
+
+        [MenuItem("CMCmd/7.Open Dialogue panel")]
+        public static void OpenDialoguePanel()
+        {
+            UIManage.Instance.ShowPanel<DialoguePanel>(UIPanelType.DialoguePanel,
+                "DialoguePanel");
+        }
     }
 }
