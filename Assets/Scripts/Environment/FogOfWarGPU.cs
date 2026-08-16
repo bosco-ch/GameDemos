@@ -21,7 +21,7 @@ namespace Environment
         private static readonly int CircleMapSize = Shader.PropertyToID("_MapWorldSize");
         private static readonly int CircleMapOrigin = Shader.PropertyToID("_MapWorldOrigin");
         private static readonly int Radius = Shader.PropertyToID("_Radius");
-        private static readonly int Opecity = Shader.PropertyToID("_Opacity");
+        private static readonly int Opacity = Shader.PropertyToID("_Opacity");
         private static readonly int OrthoMatrix = Shader.PropertyToID("_OrthoMatrix");
 
         [SerializeField] Transform player;
@@ -87,7 +87,7 @@ namespace Environment
         void SetExplorePath()
         {
             _explorePathMat.SetFloat(Radius, brushRadius);
-            _explorePathMat.SetFloat(Opecity, opecity);
+            _explorePathMat.SetFloat(Opacity, opecity);
             _ortho = Matrix4x4.Ortho(
                 mapMinX,
                 mapMaxX,

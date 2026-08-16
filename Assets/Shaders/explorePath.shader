@@ -40,9 +40,9 @@ Shader "UnLitShader/explorePath"
                 input.UV = v.UV;
                 float4 worldPos4 = float4(mul(unity_ObjectToWorld, v.pos).xyz, 1.0);
                 input.WorldPos = worldPos4.xy;
-                input.posHCS = mul(_OrthoMatrix, worldPos4);
+                // input.posHCS = mul(_OrthoMatrix, worldPos4);
                 // input.posHCS = mul(UNITY_MATRIX_VP, worldPos4);
-                // input.posHCS = TransformWorldToHClip(worldPos4);
+                input.posHCS = TransformWorldToHClip(worldPos4);
                 return input;
             }
 
