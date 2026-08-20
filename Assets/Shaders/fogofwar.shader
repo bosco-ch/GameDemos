@@ -2,7 +2,7 @@ Shader "UnLitShader/FogOfWar"
 {
     Properties
     {
-        _PlayerPos("PlayerPos", Vector) = (0,0,0,0)
+            _PlayerPos("PlayerPos", Vector) = (0,0,0,0)
         _FogTintColor("Fog Tint Color", Color) = (1,1,1,1)
         // 1. 将默认值改为 "black"，防止编辑模式下因默认白色贴图导致全屏穿透或被黄色大圆遮挡
         _MainTex("MainTex", 2D) = "black"{}

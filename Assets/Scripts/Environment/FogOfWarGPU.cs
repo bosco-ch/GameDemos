@@ -46,6 +46,7 @@ namespace Environment
         {
             _fogMaterial = new Material(GetComponent<MeshRenderer>().material);
             _fogMaterial.SetTexture(MainTex, exploreRT);
+            SetExplorePath();
         }
 
         private void Start()
@@ -55,7 +56,6 @@ namespace Environment
             RenderTexture.active = null;
             _explorePathMat = new(Shader.Find($"UnLitShader/explorePath"));
             CalculateMapSize();
-            SetExplorePath();
             SetFogMaterial();
         }
 
@@ -76,8 +76,16 @@ namespace Environment
             _explorePathMat.SetTexture(MainTex, exploreRT);
             _explorePathMat.SetVector(PlayerPos, player.position);
             _explorePathMat.SetMatrix(OrthoMatrix, _ortho);
-            cmd.SetViewProjectionMatrices(Matrix4x4.identity, _ortho);
-            cmd.DrawMesh(_fogMesh, fogPlane.localToWorldMatrix, _explorePathMat);
+            //将shader的VP矩阵设置为自己定义的_ortho。
+            //上面传参传不传 其实都无所谓
+            // cmd.SetViewProjectionMatrices(Matrix4x4.identity, _ortho);
+            Matrix4x4 planeMatrix = Matrix4x4.TRS(
+                this.transform.position,
+                Quaternion.Euler(90, 0, 0),
+                Vector3.one
+            );
+            // cmd.DrawMesh(_fogMesh, fogPlane.localToWorldMatrix, _explorePathMat);
+            cmd.DrawMesh(_fogMesh, planeMatrix, _explorePathMat);
             Graphics.ExecuteCommandBuffer(cmd);
             CommandBufferPool.Release(cmd);
             Graphics.Blit(tmp, exploreRT);
@@ -105,6 +113,7 @@ namespace Environment
         private void OnDestroy()
         {
             Destroy(_fogMaterial);
+            Destroy(_explorePathMat);
         }
 
         void CalculateMapSize()
