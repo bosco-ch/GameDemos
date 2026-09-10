@@ -24,7 +24,7 @@ public abstract class BasePanel : MonoBehaviour
     {
         UIRoot = GameObject.Find("Canvas").transform;
         //将面板挂宰uiroot下面
-        transform.SetParent(UIRoot);
+        transform.SetParent(UIRoot,false);
         // transform.position = Vector3.zero;
         // transform.localScale = Vector3.one;
         var rect = GetComponent<RectTransform>();

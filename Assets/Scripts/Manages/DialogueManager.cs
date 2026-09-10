@@ -31,21 +31,20 @@ namespace Manages
         [SerializeField] private float typingSpeed;
         public bool ChoiceParentIsLoad => choiceParent != null;
         public bool ChoiceChildIsLoad => choicesChild != null;
+
         private readonly List<DialogueSo> _dialogueList = new();
 
-//预加载
-        AsyncOperationHandle<GameObject> _currentChoice = Addressables.LoadAssetAsync<GameObject>("ChoiceGroup");
-
+        //预加载
+        AsyncOperationHandle<GameObject> _currentChoice
+            = Addressables.LoadAssetAsync<GameObject>("ChoiceGroup");
 
         protected override void Awake()
         {
             base.Awake();
             _ = LoadDialogueData();
             _ = LoadChoices();
-            var test = Addressables.LoadAssetAsync<GameObject>("");
+            // var test = Addressables.LoadAssetAsync<GameObject>("");//以后还是在加载页面的时候就弄完 免得到时候要用的时候还没有加载完
         }
-
-   
 
         //加载选择框
         async Task LoadChoices()
@@ -114,7 +113,8 @@ namespace Manages
                     await choiceTask.Task;
                     choicesChild = choiceTask.Result;
                     choicesChild.gameObject.name = $"choice_{index}";
-                    choicesChild.GetComponentInChildren<Text>().text = currentDialogueSo._dialogues[index].choice;
+                    // choicesChild.GetComponentInChildren<Text>().text =
+                    //     currentDialogueSo._dialogues[index].choice。ToString();
                 }
             }
         }

@@ -2,9 +2,8 @@ Shader "UnLitShader/FogOfWar"
 {
     Properties
     {
-            _PlayerPos("PlayerPos", Vector) = (0,0,0,0)
+        _PlayerPos("PlayerPos", Vector) = (0,0,0,0)
         _FogTintColor("Fog Tint Color", Color) = (1,1,1,1)
-        // 1. 将默认值改为 "black"，防止编辑模式下因默认白色贴图导致全屏穿透或被黄色大圆遮挡
         _MainTex("MainTex", 2D) = "black"{}
         _UnexploredAlpha("UnexploredAlpha", Range(0,1)) = .8
         _ViewRadius("ViewRadius", Float) = 1
@@ -22,8 +21,8 @@ Shader "UnLitShader/FogOfWar"
         }
         ZWrite Off
         Blend SrcAlpha OneMinusSrcAlpha
-        Cull Off
-        ZTest Always
+        Cull Back
+        ZTest Off
         Pass
         {
             HLSLPROGRAM
@@ -47,7 +46,8 @@ Shader "UnLitShader/FogOfWar"
             struct vertexInput
             {
                 float4 vertex:POSITION;
-                float4 texcoord:TEXCOORD0;
+                float4 texcoord:TEXCOORD1;
+                float2 uv:TEXCOORD0;
             };
 
             struct fragmentInput
@@ -60,30 +60,17 @@ Shader "UnLitShader/FogOfWar"
             fragmentInput vert_Main(vertexInput v)
             {
                 fragmentInput input;
-                input.posHCS = TransformObjectToHClip(v.vertex);
-                input.uvExplore = TRANSFORM_TEX(v.texcoord, _MainTex);
                 input.WorldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
+                input.posHCS = TransformObjectToHClip(v.vertex);
+                input.uvExplore = v.uv;
                 return input;
             }
 
             half4 frag_Main(fragmentInput f):SV_Target
             {
-                // float dis = distance(f.WorldPos.xy, _PlayerPos); // 2D游戏建议只算XY距离
-                // float visionFactor = smoothstep(_ViewRadius, _ViewRadius + _SmoothRange, dis);
-                // half exploreMask = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, f.uvExplore).r;
-                // half maxFogAlpha = lerp(_UnexploredAlpha, 1.0, visionFactor);
-                // half currentFog = visionFactor * maxFogAlpha;
-                // half exploredFog = (1.0 - exploreMask) * _UnexploredAlpha;
                 half4 finalFog = _FogTintColor;
-                // if (exploredFog.r >= 0.9)
-                // {
-                //     finalFog.a = 0;
-                // }
-                // else
-                // {
-                //     finalFog.a = max(currentFog, exploredFog);
-                // }
-                half exploreMask = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, f.uvExplore).r;
+                half exploreMask =
+                    SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, float2(1-f.uvExplore.x,f.uvExplore.y)).r;
                 if (exploreMask > 0.9f)
                 {
                     finalFog.a = 1 - exploreMask;
@@ -93,5 +80,4 @@ Shader "UnLitShader/FogOfWar"
             ENDHLSL
         }
     }
-    FallBack "Hidden/Universal Render Pipeline/UnlitTransparent"
 }

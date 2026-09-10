@@ -2,6 +2,7 @@ using character.Entity.bases;
 using character.Entity.enemy.States;
 using character.Interfaces;
 using Core;
+using UI;
 using UnityEngine;
 
 namespace Manages
@@ -28,6 +29,8 @@ namespace Manages
         public Transform targetPosition;
         private TaskType _taskType;
         private ITask _task;
+        private bool isOpenFirst = true; //第一次进入游戏
+
 
         public TaskType TaskType
         {
@@ -46,6 +49,12 @@ namespace Manages
                 Win();
                 _task = null;
             }
+
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                Time.timeScale = 0;
+                FirstOpen();
+            }
         }
 
         protected override void Awake()
@@ -58,6 +67,7 @@ namespace Manages
             {
                 playerTransform = GameObject.FindObjectOfType<PlayerBase>().transform;
             };
+            //绑定action
             EnemyBase.Destroy += () => { enemiesIsDecreas = true; };
             PlayerBase.Destroy += () =>
             {
@@ -85,6 +95,16 @@ namespace Manages
         void SetAlert()
         {
             otherEnemiesAlert = true;
+        }
+
+        private void FirstOpen()
+        {
+            UIManage.Instance.ShowPanel<DialoguePanel>(UIPanelType.DialoguePanel);
+        }
+
+        void closePanel()
+        {
+            UIManage.Instance.HidePanel();
         }
     }
 

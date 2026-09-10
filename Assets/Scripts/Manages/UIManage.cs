@@ -30,6 +30,7 @@ namespace Manages
             { UIPanelType.MainMenuPanel, "MainPanel" },
             { UIPanelType.PackagePanel, "Package/PackagePanel" },
             { UIPanelType.SettingPanel, "" },
+            { UIPanelType.DialoguePanel, "Dialogue/DialoguePanel" }
         };
 
         //加一个线程安全锁
@@ -55,14 +56,14 @@ namespace Manages
             }
 
             //缓存中没有，则使用预制体
-            GameObject _prefab = Resources.Load<GameObject>(PanelPrefabPath + _dictPrefabPath[panelType]);
-            if (_prefab == null)
+            GameObject prefab = Resources.Load<GameObject>(PanelPrefabPath + _dictPrefabPath[panelType]);
+            if (prefab == null)
             {
                 Debug.LogError($"path of {PanelPrefabPath + _dictPrefabPath[panelType]} is not exit");
                 return null;
             }
 
-            GameObject panel = Instantiate(_prefab); //实例化
+            GameObject panel = Instantiate(prefab); //实例化
             currectPanel = panel.GetComponent<T>();
             if (currectPanel == null)
             {
@@ -102,6 +103,7 @@ namespace Manages
                 _basePanelsStack.Push(outPanel);
                 return outPanel as T;
             }
+
             //缓存中没有，则使用预制体
             Addressables.LoadAssetAsync<GameObject>(address).Completed += handle =>
             {
@@ -116,6 +118,7 @@ namespace Manages
                     var topPanel = _basePanelsStack.Peek();
                     topPanel.gameObject.SetActive(false);
                 }
+
                 currectPanel.gameObject.SetActive(true);
                 _basePanelsStack.Push(currectPanel);
                 //给面板里面所有按钮添加上音效
