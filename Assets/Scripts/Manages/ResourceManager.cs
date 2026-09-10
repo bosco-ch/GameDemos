@@ -12,16 +12,17 @@ namespace Manages
     public class ResourceManager : Singleton<ResourceManager>
     {
         private readonly Dictionary<string, object> _resourcesCache = new Dictionary<string, object>();
+
         public async Task PreloadAsset<T>(string key, T t) where T : Object
         {
             if (_resourcesCache.ContainsKey(key))
             {
                 return;
             }
+
             var result = await Addressables.LoadAssetAsync<T>(key).Task;
             _resourcesCache.Add(key, result);
         }
-
 
         public void ClearAllResource()
         {
@@ -29,6 +30,7 @@ namespace Manages
             {
                 Addressables.Release(cache.Value);
             }
+
             _resourcesCache.Clear();
         }
     }

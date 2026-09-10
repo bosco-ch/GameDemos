@@ -14,7 +14,7 @@ namespace Environment
         [SerializeField] private Color endColor;
         private SpriteRenderer _rg;
         private Color _currentColor;
-
+ 
         private void Awake()
         {
             _rg = GetComponent<SpriteRenderer>();

@@ -136,7 +136,7 @@ namespace character.Entity.player
             _mousePos = _camera.ScreenToWorldPoint(Input.mousePosition);
             _mousePos.z = 0;
             var lookDir = _mousePos - transform.position;
-            _angleOffset = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90;
+            _angleOffset = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg * Time.timeScale - 90;
             transform.rotation = Quaternion.Euler(0, 0, _angleOffset);
         }
 

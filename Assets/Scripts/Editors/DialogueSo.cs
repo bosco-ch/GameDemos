@@ -7,7 +7,7 @@ namespace Editors
     [System.Serializable]
     public class Dialogue
     {
-        [SerializeField] public string choice;
+        [SerializeField] public int choice;
         [SerializeField] public DialogueSo _nextDialogue;
     }
 
@@ -16,9 +16,9 @@ namespace Editors
     {
         public int index;
         public string _speakName;
-        public Sprite _sprite;
+        public Sprite _sprite;//图片
         public Dialogue[] _dialogues;
         public string content;
-        public bool IsOption => _dialogues.Length > 0;
+        public bool IsOption => _dialogues.Length >1;
     }
 }

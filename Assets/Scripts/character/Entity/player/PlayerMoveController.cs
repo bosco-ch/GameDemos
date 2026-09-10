@@ -25,6 +25,7 @@ namespace character.Entity.player
         private bool _isRunning; //是否跑步
         private bool _isSneaking; //是都静步
         [SerializeField] private float moveNoise = 1f; //移动时候造成的噪音
+
         public float MoveNoise
         {
             get => moveNoise;
@@ -38,7 +39,7 @@ namespace character.Entity.player
             get => _currentMoveState;
             set
             {
-                if (value == _currentMoveState) return;    
+                if (value == _currentMoveState) return;
                 if (!_moveStateMachine.Keys.Contains(value)) return;
                 _moveStateMachine[_currentMoveState]?.OnExit();
                 _currentMoveState = value;
@@ -109,7 +110,7 @@ namespace character.Entity.player
 
         private void OnEnable()
         {
-                _actions.Player.Enable();   
+            _actions.Player.Enable();
         }
     }
 }
