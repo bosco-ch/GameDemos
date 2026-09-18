@@ -16,7 +16,7 @@ MonoBehaviour:
   _speakName: left
   _sprite: {fileID: 0}
   _dialogues:
-  - choice: 0
+  - choice: 5
     _nextDialogue: {fileID: 0}
   - choice: 0
     _nextDialogue: {fileID: 0}
@@ -24,4 +24,4 @@ MonoBehaviour:
     _nextDialogue: {fileID: 0}
   - choice: 0
     _nextDialogue: {fileID: 0}
-  content: choice 1
+  content: 

@@ -53,22 +53,22 @@ namespace Editors
                 Dialogue[] diaChild = Enumerable.Range(0, 4).Select(_ => new Dialogue()).ToArray();
                 if (line[4] != "" && !string.IsNullOrEmpty(line[4]))
                 {
-                    diaChild[0].choice = int.Parse(line[4].Substring(3, 1));
+                    diaChild[0].choice = int.Parse(line[4].Substring(3));
                 }
 
                 if (line[5] != "" && !string.IsNullOrEmpty(line[5]))
                 {
-                    diaChild[1].choice = int.Parse(line[5].Substring(3, 1));
+                    diaChild[1].choice = int.Parse(line[5].Substring(3));
                 }
 
                 if (line[6] != "" && !string.IsNullOrEmpty(line[6]))
                 {
-                    diaChild[2].choice = int.Parse(line[6].Substring(3, 1));
+                    diaChild[2].choice = int.Parse(line[6].Substring(3));
                 }
 
                 if (!string.IsNullOrEmpty(line[7]) && line[7] != "")
                 {
-                    diaChild[3].choice = int.Parse(line[7].Substring(3, 1));
+                    diaChild[3].choice = int.Parse(line[7].Substring(3));
                 }
 
                 dia._dialogues = diaChild;
@@ -86,7 +86,7 @@ namespace Editors
 
                 AssetDatabase.CreateAsset(dialogue.Value, savePath);
                 AutoAddToAddressable.AddToAddressable(savePath, $"dialogue_{dialogue.Key.ToString()}",
-                    AutoAddToAddressable.GroupType.DialogueConfig, "dialogue");
+                    AutoAddToAddressable.GroupType.DialogueConfig, "Dialogue");
             }
 
             AssetDatabase.SaveAssets();
@@ -100,10 +100,6 @@ namespace Editors
                     if (dialoguesDict.TryGetValue(d.choice, out var b))
                     {
                         dialogue.Value._dialogues.First(t => t.choice == d.choice)._nextDialogue = b;
-                    }
-                    else
-                    {
-                        Debug.Log("不存在");
                     }
                 }
             }

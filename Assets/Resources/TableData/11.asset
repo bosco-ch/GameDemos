@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07fbea4da66b4bba88028264b087ec09, type: 3}
-  m_Name: 6
+  m_Name: 11
   m_EditorClassIdentifier: 
-  index: 6
-  _speakName: left
+  index: 11
+  _speakName: right
   _sprite: {fileID: 0}
   _dialogues:
-  - choice: 7
+  - choice: 12
     _nextDialogue: {fileID: 0}
   - choice: 0
     _nextDialogue: {fileID: 0}
@@ -24,4 +24,4 @@ MonoBehaviour:
     _nextDialogue: {fileID: 0}
   - choice: 0
     _nextDialogue: {fileID: 0}
-  content: show me
+  content: 

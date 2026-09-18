@@ -1,9 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using PlayerMainScenes.States;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using IState = PlayerMainScenes.IState;
 
 public enum StateType
 {

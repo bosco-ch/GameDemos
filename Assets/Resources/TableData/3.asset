@@ -18,9 +18,9 @@ MonoBehaviour:
   _dialogues:
   - choice: 4
     _nextDialogue: {fileID: 0}
-  - choice: 5
+  - choice: 0
     _nextDialogue: {fileID: 0}
-  - choice: 6
+  - choice: 0
     _nextDialogue: {fileID: 0}
   - choice: 0
     _nextDialogue: {fileID: 0}

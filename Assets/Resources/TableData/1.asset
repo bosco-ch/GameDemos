@@ -24,4 +24,4 @@ MonoBehaviour:
     _nextDialogue: {fileID: 0}
   - choice: 0
     _nextDialogue: {fileID: 0}
-  content: "\uFFFD\uFFFD\uFFFD"
+  content: 

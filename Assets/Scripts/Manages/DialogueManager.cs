@@ -32,7 +32,7 @@ namespace Manages
         public bool ChoiceParentIsLoad => choiceParent != null;
         public bool ChoiceChildIsLoad => choicesChild != null;
 
-        private readonly List<DialogueSo> _dialogueList = new();
+        private readonly List<DialogueSo> _dialogueList = new();//对话数据
 
         //预加载
         AsyncOperationHandle<GameObject> _currentChoice

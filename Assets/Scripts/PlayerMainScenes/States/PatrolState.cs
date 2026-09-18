@@ -1,3 +1,4 @@
+using PlayerMainScenes;
 using UnityEngine;
 /// <summary>
 /// 巡逻状态
